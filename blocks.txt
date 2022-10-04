@@ -1,0 +1,11 @@
+- Header.
+- Slider
+- About Us.
+- Campaign/Events.
+- Testimonial.
+- Team.
+- Counter.
+- Gallery.
+- Partners.
+- CTA.
+- Footer.
