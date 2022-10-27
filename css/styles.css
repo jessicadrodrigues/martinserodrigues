@@ -196,7 +196,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 img {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+    /* max-width: 100%; */
+    object-fit: cover;
+}
 }
 a {
   color: #555555;
@@ -6527,7 +6531,68 @@ footer .social-icons a:hover {
     margin-top: 42px;
   }
 }
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .hidden-xs {
+    display: none;
+  }
+  .main-header-2 .navbar-contact {
+    margin-top: -61px !important;
+    right: 27px !important;
+  }
+  .main-header-2 .header-top .header-col-logo .header-logo img {
+    max-width: 25% !important;
+  }
+  .section-heading-wrapper h2.subheading-alt-style{
+    font-size: 18px !important;
+  }
+  .section-content-block .row .col-xs-12 {
+    width: 100%;
+  }
+  .section-content-block .row .col-xs-12 .service-block-2 figure {
+    width: 100%;
+  }
+  .section-content-block-minimal{
+    margin: 0 37px;
+  }
+  .counter-block-2 .icon{
+    font-size: 45px;
+  }
+  .counter-block-2 .counter {
+    font-size: 33px;
+  }
+  .counter-block-2 p {
+    font-size: 19px;
+  } 
+  .section-content-block-minimal .row .col-xs-12{
+    width: 50%;
+  }
+  .testimony-layout-1 p.testimony-text{
+    font-size: 20px;
+    width: 435px;
+  }
+  footer .social-icons{
+    display: none;
+  }
+
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1370px) {
+  .navgiation-wrapper .header-top .container .row .header-col-logo{
+    width: 15% !important;
+  }
+  .navgiation-wrapper .header-top .container .row .hidden-xs .row {
+    width: 90vw !important;
+  }
+  .navgiation-wrapper .header-top .container .row .col-sm-4{
+    width: 33.33% !important;
+  }
+  .footer-widget-area .icons-sm{
+    display: none;
+  }
+  .main-header-2 .header-top .header-col-logo .header-logo img {
+    max-width: 100px !important;
+  }
   #slider_1 {
     text-align: center;
   }
@@ -6820,7 +6885,64 @@ footer .social-icons a:hover {
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  /*-----  HELPER CLASS----*/
+  .section-content-block .section-heading-wrapper .text-center h4{
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .section-secondary-bg{
+    height:53vh;
+  }
+  .testimonial-container{
+    padding: 0;
+  }
+  .service-block-2 figure{
+    width: 100%;
+  }
+  .section-content-block .row{
+    width: 100%;
+    margin: auto;
+  }
+  .service-block-2 figure{
+    height: 258px;
+  }
+  .container .counter-block-2 {
+    margin-bottom: 0;
+  }
+  .container .counter-block-2 i{
+    font-size: 25px;
+  }
+  .container .counter-block-2 .count-info span{
+    font-size: 18px;
+  }
+  .section-content-block-minimal{
+    width: 80%;
+    margin: auto;
+  }
+  .team-layout-1 .team-info h3{
+    font-size:20px;
+  }
+  .sc-testemunhos .title-testemunhos{
+    padding-top: 0;
+  }
+  .noticias .container .clearfix .col-xs-10{
+    width: 100%;
+  }
+  .noticias .container .clearfix .col-xs-offset-1{
+    margin-left: 0;
+  }
+  .noticias .container .clearfix .news-content{
+    text-align: center;
+  }
+  footer.section-pure-black-bg .container .footer-info{
+    width: 100%;
+  }
+  .footer-widget-area .textwidget i.fa{
+    padding-top: 0;
+  }
+  .footer-widget-area .icons-sm{
+    display: none;
+  }
+  
   .no-padding-pricing-table,
   .no-padding {
     padding-left: 15px !important;
@@ -6834,7 +6956,7 @@ footer .social-icons a:hover {
   }
   .btn-theme {
     line-height: 18px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 14px 20px;
   }
   /*-----  TOP BAR ----*/
@@ -6949,9 +7071,10 @@ footer .social-icons a:hover {
     padding: 6px 12px;
   }
   .main-header-2 .navbar-default .navbar-toggle {
-    margin-top: 8px;
+    margin-top: 4px;
     margin-bottom: 12px;
-    float: none;
+    padding: 14px 8px;
+    float: left;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
@@ -7033,7 +7156,7 @@ footer .social-icons a:hover {
     margin: 0px;
     width: 100%;
     text-align: left;
-    background: rgba(0, 0, 0, 0.7);
+    background: #001638;
   }
   .main-header-2 .navbar-default .navbar-nav li a {
     color: #b9a05c;
@@ -7059,7 +7182,8 @@ footer .social-icons a:hover {
     margin: 0;
   }
   .main-header-2 .navbar-contact {
-    display: none;
+    margin-top: -6px;
+    right: 3px;
   }
   .logo {
     text-align: center;
@@ -7312,6 +7436,9 @@ footer .social-icons a:hover {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
+  .section-secondary-bg{
+    height:46vh;
+  }
   .logo-layout-2 [class^="col-"] {
     padding-left: 15px !important;
     padding-right: 15px !important;
@@ -7427,7 +7554,7 @@ footer .social-icons a:hover {
     margin: 40px 0 10px;
   }
   #slider_1 .slider-content h2 {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 36px;
     padding-bottom: 0px;
     margin-bottom: 16px;
@@ -7627,9 +7754,9 @@ footer .social-icons a:hover {
   .footer-widget-area {
     padding: 42px 0 0 0;
   }
-  .footer-widget-area .textwidget i.fa {
+  /* .footer-widget-area .textwidget i.fa {
     padding-top: 10px;
-  }
+  } */
   .footer-widget-area .textwidget p {
     padding-left: 30px;
   }
@@ -7671,7 +7798,7 @@ footer .social-icons a:hover {
 }
 
 .main-header-2 .header-top .header-col-logo .header-logo img{
-  max-width: 45%;
+  max-width: 30%;
 }
 
 .icons-sm{
