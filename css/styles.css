@@ -185,7 +185,7 @@ select,
 textarea {
   margin: 0;
 }
-/***********************************************************************************************/
+/***********************************************************************************************/whats
 /* 01. GENERAL STYLING  */
 /***********************************************************************************************/
 body {
@@ -5563,6 +5563,7 @@ ul.pagination li:last-child {
 .service-bottom-layout {
   margin-top: 30px;
 }
+
 .single-service-content h3 {
   font-size: 25px;
   margin-top: 15px;
@@ -7435,6 +7436,10 @@ footer .social-icons a:hover {
   .no-padding {
     padding-left: 15px !important;
     padding-right: 15px !important;
+  }
+  .single-service-content h3 {
+    font-size: 23px;
+    margin-top: 15px;
   }
   .section-secondary-bg{
     height:46vh;
