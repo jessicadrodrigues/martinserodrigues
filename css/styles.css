@@ -6579,15 +6579,6 @@ footer .social-icons a:hover {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1370px) {
-  .navgiation-wrapper .header-top .container .row .header-col-logo{
-    width: 15% !important;
-  }
-  .navgiation-wrapper .header-top .container .row .hidden-xs .row {
-    width: 90vw !important;
-  }
-  .navgiation-wrapper .header-top .container .row .col-sm-4{
-    width: 33.33% !important;
-  }
   .footer-widget-area .icons-sm{
     display: none;
   }
