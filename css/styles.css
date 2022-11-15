@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:300,400,500,700,800');
 
-@font-face {
+/* @font-face {
   font-family: 'Avenir';
   src: url('AvenirLTStd-Roman.otf') format ('opentype'), url('AvenirLTStd-Book.otf') format ('opentype'), url('AvenirLTStd-Black.otf') format ('opentype');
 }
@@ -11,7 +11,7 @@
 @font-face {
   font-family: 'FuturaBook';
   src: url('FuturaLT-Book.ttf') format ('truetype');
-}
+} */
 
 
 html,
@@ -87,7 +87,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 article,
@@ -148,7 +147,6 @@ input,
 select {
   vertical-align: middle;
 }
-/* Remove margins for navigation lists */
 nav ul,
 nav li {
   margin: 0;
@@ -164,8 +162,6 @@ td {
 textarea {
   overflow: auto;
 }
-/* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
-/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css ; */
 input[type="radio"] {
   vertical-align: text-bottom;
 }
@@ -178,18 +174,14 @@ input[type="checkbox"] {
 .ie6 input {
   vertical-align: text-bottom;
 }
-/* Webkit browsers add a 2px margin outside the chrome of form elements */
 button,
 input,
 select,
 textarea {
   margin: 0;
 }
-/***********************************************************************************************/whats
-/* 01. GENERAL STYLING  */
-/***********************************************************************************************/
+
 body {
-  font: 16px 'Futura', sans-serif;
   color: #646464;
   font-style: normal;
   position: relative;
@@ -216,7 +208,7 @@ a:focus {
   text-decoration: none;
 }
 blockquote {
-  font: 'Futura', sans-serif;
+  font: 'Montserrat', sans-serif;
   color: #646464;
 }
 h2,
@@ -224,14 +216,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'FuturaBook', serif;!important
+  font-family: 'Times New Roman', Times, serif, serif;!important
   color: #555555;
   line-height: 32px;
   margin: 0 0 16px 0;
   letter-spacing: 0.03em;
 }
 h1 {
-  font-family: 'Avenir', serif;
+  font-family: 'Times New Roman', Times, serif, serif;
   font-style: normal;
   color: #555555;
   line-height: 32px;
@@ -340,7 +332,6 @@ textarea:focus {
     box-shadow: 0 0 0 5px rgba(242, 87, 100, 0);
   }
 }
-/*----- CUSTOM MARGIN ----*/
 .no-margin {
   margin: 0px !important;
 }
@@ -392,7 +383,6 @@ textarea:focus {
 .margin-right-0 {
   margin-right: 0px;
 }
-/*----- CUSTOM PADDING ----*/
 .no-gutter [class^="col-"] {
   padding: 0px;
 }
@@ -414,7 +404,7 @@ textarea:focus {
 .padding-all-4 {
   padding: 4px;
 }
-/*----- PRE LOADER ----*/
+
 #preloader {
   background: #ffffff;
   height: 100%;
@@ -544,12 +534,12 @@ span.border-light-dotted {
 span.border-bold-dashed {
   border-bottom: 2px dashed #b9a05c;
 }
-/*-----  BLOCKQUOTE ----*/
+
 blockquote {
   padding: 12px 26px 26px 42px;
   margin: 0 0 20px;
   font-size: 14px;
-  font-family: 'Futura', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #FFFFFF;
   position: relative;
   border: 1px solid #CCCCCC;
@@ -565,7 +555,7 @@ blockquote:before {
   left: 12px;
   top: 14px;
   content: "\f10d";
-  font-family: 'FuturaBook';
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   color: #d6d6d6;
   font-style: normal;
@@ -631,7 +621,7 @@ cite:before {
 .bq-author .bq-author-info {
   font-size: 12px;
 }
-/*----- ORDERED/UNORDERED LISTS ----*/
+
 ol {
   clear: both;
 }
@@ -640,7 +630,7 @@ ol li {
   margin: 0 0 10px 25px;
   list-style-type: decimal;
 }
-/*----- ACCORDION ----*/
+
 .accordion .panel {
   margin-bottom: 3px;
   -moz-border-radius: 0px;
@@ -657,7 +647,7 @@ span.label {
   border-radius: 0px;
   font-size: 100%;
 }
-/*----- BUTTONS ----*/
+
 #btn,
 .btn {
   text-align: center;
@@ -807,7 +797,7 @@ a.btn-load-more:hover {
   background: transparent;
   border: 2px solid #b9a05c;
 } */
-/*End BTN Style*/
+
 .btn-theme-invert {
   color: #FFFFFF;
   background: #00995B;
@@ -882,7 +872,7 @@ a.btn-about:hover {
   margin: 6px 0;
   width: 100%;
 }
-/*----- THEME CUSTOM TEXT SHADOW ----*/
+
 .theme-custom-text-shadow {
   -webkit-text-shadow: 1px 1px 1px #666666 !important;
   text-shadow: 1px 1px 1px #666666 !important;
@@ -891,12 +881,12 @@ a.btn-about:hover {
   -webkit-text-shadow: 0px 0px 0px #666666 !important;
   text-shadow: 0px 0px 0px #666666 !important;
 }
-/*-----  THEME CUSTOM TEXT BACKGROUND ----*/
+
 .theme-custom-text-background {
   background: rgba(93, 156, 236, 0.7);
   padding: 7px 15px;
 }
-/*-----  BOX SHADOW----*/
+
 .theme-custom-box-shadow {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -923,7 +913,7 @@ a.btn-about:hover {
 .theme-custom-box-animation:hover {
   top: -5px;
 }
-/*----- BUTTONS  ----*/
+
 .btn-cta {
   background: #2C2C2C;
   color: #FFFFFF;
@@ -1003,7 +993,7 @@ a.btn-about:hover {
   background-color: #ce9b28;
   color: #FFFFFF;
 }
-/*----- COMMENT BUTTON ----*/
+
 #comment_btn {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -1050,11 +1040,7 @@ a.btn-about:hover {
   margin-bottom: 21px;
   background: #FFFFFF;
 }
-/*------------------------------ Gallery Caption  ---------------------------------*/
-/*------------------------------ By Post Author ---------------------------------*/
-/***********************************************************************************************/
-/* 02. HEADER */
-/***********************************************************************************************/
+
 .main-header {
   height: auto;
   left: 0;
@@ -1069,7 +1055,6 @@ a.btn-about:hover {
 .main-header .navgiation-wrapper {
   background: #ffffff;
 }
-/*----- TOP BAR ----*/
 .top-bar {
   overflow: hidden;
   background: #5c5c5c;
@@ -1224,9 +1209,7 @@ a.free-estimate:hover {
   margin-top: 32px;
   margin-bottom: 0;
 }
-/***********************************************************************************************/
-/* 03. MAIN NAVIGATION MENU */
-/***********************************************************************************************/
+
 a.logo {
   margin-top: 16px;
   display: inline-block;
@@ -1263,8 +1246,7 @@ a.logo img {
 }
 .navbar-default .navbar-nav li.drop a:after {
   content: "";
-  /*-----  Change Here----*/
-  font-family: 'FuturaBook';
+  font-family:   'Montserrat', sans-serif;
   position: absolute;
   right: -3px;
   top: 15px;
@@ -1309,7 +1291,7 @@ a.logo img {
   content: '';
 }
 .navbar-default .navbar-nav li ul.drop-down li a {
-  font-family: 'FuturaBook', sans-serif;
+  font-family:   'Montserrat', sans-serif;
   font-size: 13px;
   letter-spacing: 0.1em;
   display: inline-block;
@@ -1324,7 +1306,7 @@ a.logo img {
 }
 .navbar-default .navbar-nav li ul.drop-down li a:after {
   content: '';
-  font-family: 'FuturaBook';
+  font-family:   'Montserrat', sans-serif;
   position: absolute;
   right: 12px;
 }
@@ -1346,8 +1328,7 @@ a.logo img {
 }
 .navbar-default .navbar-nav li ul.drop-down li.drop a:after {
   content: '';
-  /*-----  Change Here----*/
-  font-family: 'FuturaBook';
+  font-family:'Montserrat', sans-serif;
   position: absolute;
   right: 12px;
 }
@@ -1424,15 +1405,9 @@ a.nav-btn-highlight:hover {
 .menu-container .navbar-nav li ul.drop-down {
   top: 66px;
 }
-/*----- HEADER STYLE 02 ----*/
+
 .main-header-2 {
   clear: both;
-  /*-----  MAIN HEADER ----*/
-  /*-----  SITE LOGO ----*/
-  /*-----  HEADER TOC ----*/
-  /*----- COMPACT ----*/
-  /*-----  STICKY TOP MENU ----*/
-  /*-----  Navbar Social icon ----*/
 }
 .main-header-2 .main-header {
   height: auto;
@@ -1796,9 +1771,29 @@ a.nav-btn-highlight:hover {
 }
 .detalhesservicos{
   display: flex;
-  flex-direction: column;
   margin-bottom: 10px;
+  flex-direction: column;
   width: 80vw;
+}
+
+.detalhesservicos img{
+  width: 35vw;
+  margin-right: 29px;
+}
+.detalhesservicos .detalhesimagem{
+  display: flex;    
+  width: 80vw;
+  margin: 20px 0;
+}
+.detalhesservicos .detalhesimagem  .maisdetalhes{
+  margin: auto 0 !important;
+}
+.detalhesservicos .detalhesimagem img{
+  width: 35vw;
+  margin-right: 29px;
+}
+.detalhesservicos .detalhesimagem .pensao{
+  height: 353px;
 }
 .detalhesservicos2{
   width: 50vw;
@@ -1814,7 +1809,7 @@ a.nav-btn-highlight:hover {
   line-height: 23px;
 }
 .detalhesservicos li{
-  line-height: 32px;
+  line-height: 27px;
   font-size: 16px;
 }
 .block-heading-title:before {
@@ -1898,10 +1893,7 @@ a.nav-btn-highlight:hover {
   position: relative;
   top: -3px;
 }
-/***********************************************************************************************/
-/*  05. TEMPLATE ELEMENTS */
-/***********************************************************************************************/
-/*----- 05.1 SLIDER ----*/
+
 .slider-wrap {
   clear: both;
 }
@@ -1929,7 +1921,7 @@ a.nav-btn-highlight:hover {
   width: 100%;
 }
 #slider_1 .slider-content h2 {
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: 72px;
   line-height: 72px;
   margin: 0px 0 0;
@@ -1944,7 +1936,7 @@ a.nav-btn-highlight:hover {
   text-shadow: 1px 1px 1px #666666;
 }
 #slider_1 .slider-content h3 {
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0em;
@@ -2109,7 +2101,7 @@ a.nav-btn-highlight:hover {
   -webkit-animation-delay: 0ms  ;
   animation-delay: 0ms  ;
 }
-/*----- 05.2 STATIC BANNER ----*/
+
 .section-banner {
   padding: 200px 0px 200px;
   background-repeat: no-repeat;
@@ -2134,7 +2126,7 @@ a.nav-btn-highlight:hover {
   color: #e9cc8d;
 }
 .banner-content h3 {
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
   color: #FFFFFF;
   font-size: 24px;
   line-height: 32px;
@@ -2164,7 +2156,7 @@ a.nav-btn-highlight:hover {
 .banner-content .slider-button a.btn-slider:hover {
   background: #ce9b28;
 }
-/*----- 05.3 ABOUT US LAYOUTS ----*/
+
 .our-experience {
   color: #555555;
   font-size: 32px;
@@ -2192,7 +2184,7 @@ a.nav-btn-highlight:hover {
 .about-us-stick-bottom {
   top: 66px;
 }
-/*------------------------------  NEW ABOUT LAYOUT---------------------------------*/
+
 .section-feat-about-us {
   position: relative;
   padding: 0;
@@ -2317,7 +2309,7 @@ a.nav-btn-highlight:hover {
 .about-us-layout-2 .about-us-img-2:after {
   color: #2b2b2b;
   position: absolute;
-  font-family: 'FuturaBook';
+  font-family:   'Montserrat', sans-serif;
   content: '\f04b';
   width: 80px;
   height: 80px;
@@ -2385,7 +2377,7 @@ a.nav-btn-highlight:hover {
 .full-width-video-box .video-box-img-container:after {
   color: #2b2b2b;
   position: absolute;
-  font-family: 'FuturaBook';
+  font-family:   'Montserrat', sans-serif;
   content: '\f04b';
   width: 110px;
   height: 110px;
@@ -2428,7 +2420,7 @@ a.nav-btn-highlight:hover {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 0 0px #5a2918;
 }
-/*-----  ABOUT US VIDEO BLOCK ----*/
+
 .about-us-container {
   background: #EDF0F2;
   position: relative;
@@ -2445,7 +2437,7 @@ a.nav-btn-highlight:hover {
   font-size: 32px;
   margin-bottom: 25px;
   text-transform: uppercase;
-  font-family: 'FuturaBook', serif;
+  font-family:   'Montserrat', sans-serif;
   letter-spacing: 0.03em;
   color: #555555;
 }
@@ -2537,7 +2529,7 @@ ul.custom-bullet-list.custom-icon li:before {
   border: 5px solid #b9a05c;
   color: #e6e6e6;
 }
-/*----- 05.4 HIGHLIGHTS/WHY CHOOSE US LAYOUTS----*/
+
 .why-choose-lists {
   position: relative;
   float: left;
@@ -2616,7 +2608,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .why-choose-lists li .reason-text p {
   color: #717171;
 }
-/*----- 05.4.1 HIGHLIGHTS LAYOUTS  ----*/
+
 .highlight-box {
   margin-top: 24px;
   padding: 48px;
@@ -2630,7 +2622,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .highlight-box:hover {
   background: #fbfbfb;
 }
-/*----- 05.4.1 HIGHLIGHTS LAYOUTS  ----*/
+
 .highlight-layout-1 {
   margin: 24px 0;
   background: #FFFFFF;
@@ -2653,9 +2645,6 @@ ul.custom-bullet-list.custom-icon li:before {
   color: #646464;
   margin-bottom: 12px;
   font-size: 22px;
-}
-.highlight-layout-1 h5 a {
-  font-size: inherit;
 }
 .highlight-layout-1 div {
   color: #646464;
@@ -2842,7 +2831,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .highlight-carousel:hover .owl-nav {
   opacity: 1;
 }
-/*----- 05.4.2 INFO BOX LAYOUT 01 ----*/
+
 .info-box-layout-1 {
   text-align: center;
   background: #FFFFFF;
@@ -2874,7 +2863,7 @@ ul.custom-bullet-list.custom-icon li:before {
   text-transform: uppercase;
   font-size: 18px;
   color: #646464;
-  font-family: 'Avenir', serif;
+  font-family: 'Times New Roman', Times, serif, serif;
   position: relative;
 }
 .info-box-layout-1 h2:after {
@@ -2908,7 +2897,7 @@ ul.custom-bullet-list.custom-icon li:before {
   width: 32px;
   height: 2px;
 }
-/*----- 05.4.2 INFO BOX LAYOUT 02 ----*/
+
 .info-box-layout-2 {
   text-align: left;
   background: #FFFFFF;
@@ -2922,7 +2911,7 @@ ul.custom-bullet-list.custom-icon li:before {
   font-size: 18px;
   margin-bottom: 24px;
   color: #646464;
-  font-family: 'Avenir', serif;
+  font-family: 'Times New Roman', Times, serif, serif;
   position: relative;
 }
 .info-box-layout-2 h2:after {
@@ -2966,7 +2955,7 @@ ul.custom-bullet-list.custom-icon li:before {
   color: #FFFFFF;
   border: 1px solid #b9a05c;
 }
-/*----- 05.4.2 INFO BOX LAYOUT 03 ----*/
+
 .info-box-layout-3 {
   background: #FFFFFF;
   border: 1px solid #CCCCCC;
@@ -2990,7 +2979,7 @@ ul.custom-bullet-list.custom-icon li:before {
   font-size: 18px;
   margin-bottom: 24px;
   color: #646464;
-  font-family: 'Avenir', serif;
+  font-family: 'Times New Roman', Times, serif, serif;
   position: relative;
 }
 .info-box-layout-3 h2:after {
@@ -3037,7 +3026,7 @@ ul.custom-bullet-list.custom-icon li:before {
   color: #FFFFFF;
   border: 1px solid #b9a05c;
 }
-/*-----  SERVICE LAYOUTS ----*/
+
 .service-block-1 {
   overflow: hidden;
   background: #fafafa;
@@ -3146,6 +3135,12 @@ ul.custom-bullet-list.custom-icon li:before {
   -o-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
   transform: scale(1);
+}
+.service-block-2 figure img:hover{
+  opacity: 0.5;
+  transform: scale(1);
+  background-color: #000;
+
 }
 .service-block-2 figure:after {
   -webkit-transition: all 0.3s ease-in-out;
@@ -3324,7 +3319,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .service-carousel:hover .owl-nav {
   opacity: 1;
 }
-/*-----  PROCESS LAYOUTS ----*/
+
 .process-step-1 {
   overflow: hidden;
   padding: 42px 24px;
@@ -3366,7 +3361,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .process-step-1:hover span {
   color: #646464;
 }
-/*----- TEAM LAYOUT ----*/
+
 .team-layout-1 {
   margin: 0 0 24px 0;
   background: #FFFFFF;
@@ -3583,7 +3578,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .team-carousel:hover .owl-nav {
   opacity: 1;
 }
-/*----- COUNTER LAYOUT ----*/
+
 .section-counter-bg {
   background-image: url("../images/counter_bg.jpg");
   background-repeat: repeat;
@@ -3684,7 +3679,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .counter-block-2.light-counter-layout p {
   color: #FFFFFF;
 }
-/*----- PRICING TABLE LAYOUTS ----*/
+
 .price-table-layout-1 {
   background: #fcfcfc;
   border: 2px solid #e3e3e3;
@@ -3822,7 +3817,7 @@ ul.custom-bullet-list.custom-icon li:before {
   border: 0px solid #5a2918;
   color: #5a2918;
 }
-/*----- TESTIMONIAL LAYOUTS ----*/
+
 .section-testimonial-bg {
   background-image: url("../images/testimonial_bg.jpg");
   background-repeat: repeat;
@@ -3835,8 +3830,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .testimony-layout-1 {
   background: #FFFFFF;
   position: relative;
-  padding: 24px 24px 24px;
-  margin: 16px 0 0 0px;
+  padding: 0px 24px 24px;
 }
 .testimony-layout-1 img {
   -webkit-border-radius: 0%;
@@ -3848,7 +3842,7 @@ ul.custom-bullet-list.custom-icon li:before {
   height: 60px;
   max-width: 60px;
   margin: 0 auto 12px;
-  border: 1px solid #b9a05c;
+  /* border: 1px solid #b9a05c; */
   padding: 5px;
 }
 .testimony-layout-1 .testimony-info {
@@ -3887,17 +3881,17 @@ ul.custom-bullet-list.custom-icon li:before {
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 24px 0;
-  padding-top: 45px;
+  padding-top: 0;
   color: #646464;
   width: 313px;
-  height: 20vh;
+  height: 13vh;
 }
-.testimony-layout-1 p.testimony-text:before {
+/* .testimony-layout-1 p.testimony-text:before {
   background: transparent;
   color: #b9a05c;
   content: '\f10d';
   display: block;
-  font-family: 'FuturaBook';
+  font-family:   'Montserrat', sans-serif;
   font-size: 50px;
   font-style: normal;
   height: 48px;
@@ -3909,7 +3903,7 @@ ul.custom-bullet-list.custom-icon li:before {
   text-align: center;
   top: 6px;
   width: 48px;
-}
+} */
 .testimonial-container.owl-carousel [class^="col-"] {
   width: 100%;
 }
@@ -4027,7 +4021,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .testimonial-container:hover .owl-nav {
   opacity: 1;
 }
-/*----- NEWSLETTER LAYOUT 01 ----*/
+
 .horizontal-newsletter {
   position: relative;
   overflow: hidden;
@@ -4072,7 +4066,7 @@ ul.custom-bullet-list.custom-icon li:before {
 .horizontal-newsletter .news-subscription button:hover:before {
   background: #a37b20;
 }
-/*----- HOME BLOG LAYOUT 01 ----*/
+
 .latest-blog {
   clear: both;
   margin-bottom: 24px;
@@ -4157,7 +4151,7 @@ a.latest-date {
 .blog-details a:hover {
   color: #b9a05c;
 }
-/*----- CTA LAYOUTS ----*/
+
 .section-cta-bg {
   background: #b9a05c;
 }
@@ -4283,7 +4277,7 @@ a.btn-cta-2:hover {
   font-size: 18px;
   color: #FFFFFF;
 }
-/*----- CTA VIDEO  ----*/
+
 .cta-video-icon {
   background: #FFFFFF;
   border: 5px solid #CCCCCC;
@@ -4318,7 +4312,7 @@ a.btn-cta-2:hover {
   border: 5px solid #CCCCCC;
   color: #b9a05c;
 }
-/*----- SECTION APPOINTMENT ----*/
+
 .section-appointment-bg {
   background-image: url("../images/appointment_bg.jpg");
   background-repeat: repeat;
@@ -4347,7 +4341,7 @@ a.btn-cta-2:hover {
   -webkit-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.05);
-  /*----- LIGHT LAYOUT OF APPOINTMENT FORM ----*/
+
 }
 .appointment-form-wrapper .appointment-form-heading {
   position: relative;
@@ -4517,7 +4511,7 @@ a.btn-cta-2:hover {
   padding: 42px 24px 0 24px;
   position: relative;
   margin: -1px -1px 48px -1px;
-  /*----- For Left Alignmnent ----*/
+
 }
 .appointment-form-wrapper.light-layout .appointment-form-heading .form-title + p {
   margin-top: 0;
@@ -4853,9 +4847,7 @@ a.btn-cta-2:hover {
 .logo-items:hover .owl-nav {
   opacity: 1;
 }
-/***********************************************************************************************/
-/* MAIN CONTENT */
-/***********************************************************************************************/
+
 .main-content {
   margin: 48px 0;
 }
@@ -4886,9 +4878,7 @@ a.btn-cta-2:hover {
 .section-transparent-bg {
   background: transparent !important;
 }
-/***********************************************************************************************/
-/* 05. BLOG LAYOUT */
-/***********************************************************************************************/
+
 .single-post {
   margin-bottom: 50px;
 }
@@ -4940,9 +4930,7 @@ a.btn-cta-2:hover {
   background-clip: padding-box;
   padding: 6px 12px;
 }
-/***********************************************************************************************/
-/* 06. BLOG SINGLE PAGE */
-/***********************************************************************************************/
+
 .single-post-inner {
   background: #F9FAFB;
   border: 1px solid #fafafa;
@@ -5334,7 +5322,8 @@ ul.pagination li:last-child {
   top: 15px;
   color: #F8F8F8;
   font-size: 32px;
-  font-family: 'FuturaBook', serif;
+  font-family:'Montserrat', sans-serif;
+
 }
 .commentslist li article header h5 {
   margin-bottom: 12px;
@@ -5460,9 +5449,7 @@ ul.pagination li:last-child {
   border: 0px;
   border-bottom: 1px solid #919191;
 }
-/***********************************************************************************************/
-/* PAGE HEADR AND BREADCRUMB */
-/***********************************************************************************************/
+
 .page-header {
   margin: 0;
   padding: 80px 0 80px;
@@ -5509,9 +5496,7 @@ ul.pagination li:last-child {
 .page-header .page-breadcrumb a:hover {
   color: #646464;
 }
-/***********************************************************************************************/
-/* SINGLE TEAM PAGE */
-/***********************************************************************************************/
+
 .single-team {
   background: transparent;
   margin: 20px 0 30px;
@@ -5522,7 +5507,7 @@ ul.pagination li:last-child {
   width: 100%;
 }
 .single-team-details h3 {
-  font-family: 'Avenir', serif;
+  font-family: 'Times New Roman', Times, serif, serif;
   font-size: 20px;
   letter-spacing: 0.03em;
   margin: 12px 0 0;
@@ -5530,7 +5515,7 @@ ul.pagination li:last-child {
 }
 .single-team-details h4 {
   color: #9a9a9a;
-  font-family: 'Avenir', serif;
+  font-family: 'Times New Roman', Times, serif, serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -5557,9 +5542,7 @@ ul.pagination li:last-child {
   padding: 10px 15px;
   text-transform: uppercase;
 }
-/***********************************************************************************************/
-/* SERVICE PAGE */
-/***********************************************************************************************/
+
 .service-bottom-layout {
   margin-top: 30px;
 }
@@ -5579,7 +5562,7 @@ ul.pagination li:last-child {
 }
 .single-service-content ul li:before {
   content: '\f00c';
-  font-family: 'FuturaBook';
+  font-family: 'Montserrat', sans-serif;
   display: inline-block;
   color: #b9a05c;
   margin: 0 11px 0 0;
@@ -5591,9 +5574,6 @@ ul.pagination li:last-child {
   line-height: 24px;
 }
 
-/***********************************************************************************************/
-/*  FAQ PAGE */
-/***********************************************************************************************/
 .faq-layout {
   position: relative;
   overflow: hidden;
@@ -5634,7 +5614,6 @@ ul.pagination li:last-child {
   letter-spacing: 0.03em;
   margin-bottom: 0;
   margin-top: 0;
-  font-size: inherit;
   text-transform: uppercase;
   color: #FFFFFF;
 }
@@ -5653,7 +5632,7 @@ ul.pagination li:last-child {
   padding-left: 0px;
 }
 .faq-layout .faq-box .panel-heading [data-toggle="collapse"]:after {
-  font-family: 'FuturaBook';
+  font-family: 'Montserrat', sans-serif;
   content: '\f0d8';
   float: left;
   color: #FFFFFF;
@@ -5663,9 +5642,7 @@ ul.pagination li:last-child {
 .faq-layout .faq-box .panel-heading [data-toggle="collapse"].collapsed:after {
   content: '\f0d7';
 }
-/***********************************************************************************************/
-/*  COMING SOON PAGE */
-/***********************************************************************************************/
+
 .section-coming-countdown-bg {
   background: transparent;
   background-image: url('../images/coming-soon.jpg');
@@ -5696,20 +5673,18 @@ ul.pagination li:last-child {
   display: block;
   font-size: 90px;
   line-height: 100px;
-  font-family: 'FuturaBook', serif;
+  font-family:   'Montserrat', sans-serif;
   color: #FFFFFF;
 }
 #coming_countdown .countdown_container span.count_text {
   display: block;
   font-size: 32px;
   line-height: 42px;
-  font-family: 'FuturaBook', sans-serif;
+  font-family:'Montserrat', sans-serif;
   color: #FFFFFF;
   text-transform: uppercase;
 }
-/***********************************************************************************************/
-/* 09. GALLERY PAGE */
-/***********************************************************************************************/
+
 .section-gallery-bg {
   background-image: url("../images/gallery_bg.jpg");
   background-repeat: no-repeat;
@@ -5758,7 +5733,7 @@ ul.pagination li:last-child {
   transition: all 0.5s ease-in-out;
 }
 .gallery-light-box .gallery-img:after {
-  font-family: 'Futura';
+  font-family: 'Montserrat', sans-serif;;
   content: '\f1c5';
   position: absolute;
   right: 150%;
@@ -5916,9 +5891,7 @@ ul.pagination li:last-child {
 .gallery-carousel:hover .owl-nav {
   opacity: 1;
 }
-/***********************************************************************************************/
-/* 11. 404 PAGE */
-/***********************************************************************************************/
+
 .section-404 {
   background: #EDF0F2;
 }
@@ -5929,7 +5902,7 @@ ul.pagination li:last-child {
   font-size: 180px;
   line-height: 200px;
   letter-spacing: 0.1em;
-  font-family: 'Futura', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #b9a05c;
 }
 .message-container-404 .text-404 span {
@@ -5940,9 +5913,7 @@ ul.pagination li:last-child {
   line-height: 42px;
   display: block;
 }
-/***********************************************************************************************/
-/* CONTACT PAGE */
-/***********************************************************************************************/
+
 .content-block {
   padding: 0 48px 0 0;
 }
@@ -5966,7 +5937,7 @@ ul.pagination li:last-child {
   margin-bottom: 24px;
 }
 .header-top{
-  font-family: 'FuturaBook',sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .header-top .text a{
   font-size: 14px;
@@ -6067,9 +6038,7 @@ ul.pagination li:last-child {
   border: 0px;
   border-bottom: 1px solid #919191;
 }
-/***********************************************************************************************/
-/* 12. FOOTER */
-/***********************************************************************************************/
+
 footer {
   background: #5c5c5c;
   color: #FFFFFF;
@@ -6239,9 +6208,7 @@ footer .social-icons a:hover {
 .footer-contents .copyright-text {
   line-height: 24px;
 }
-/***********************************************************************************************/
-/* 13. SIDEBAR & WIDGETS */
-/***********************************************************************************************/
+
 .widget {
   background: #F9FAFB;
   margin-bottom: 30px;
@@ -6259,7 +6226,7 @@ footer .social-icons a:hover {
   line-height: 36px;
   padding-bottom: 12px;
   text-transform: capitalize;
-  font-family: 'FuturaBook', serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0em;
   color: #111111;
   border-bottom: 1px solid #cacaca;
@@ -6323,7 +6290,7 @@ footer .social-icons a:hover {
   text-transform: capitalize;
 }
 .widget-post-category li a {
-  font-size: inherit;
+  /* font-size: inherit; */
   position: relative;
   -webkit-transition: 0.3s 0.2s ease-in-out;
   -moz-transition: 0.3s 0.2s ease-in-out;
@@ -6338,7 +6305,7 @@ footer .social-icons a:hover {
   padding: 0;
 }
 .widget-service-category li a {
-  font-size: inherit;
+  /* font-size: inherit; */
   position: relative;
   -webkit-transition: 0.3s 0.2s ease-in-out;
   -moz-transition: 0.3s 0.2s ease-in-out;
@@ -6398,9 +6365,7 @@ footer .social-icons a:hover {
   border: 1px solid #b9a05c;
   background: #FFFFFF;
 }
-/***********************************************************************************************/
-/* Widget Link Color */
-/***********************************************************************************************/
+
 .sidebar-widget a {
   color: #646464;
   -webkit-transition: 0.3s 0.2s ease-in-out;
@@ -6411,9 +6376,7 @@ footer .social-icons a:hover {
 .sidebar-widget a:hover {
   color: #b9a05c;
 }
-/***********************************************************************************************/
-/* CALENDAR WIDGET */
-/***********************************************************************************************/
+
 #calendar_wrap {
   margin: 0 auto 5px auto;
 }
@@ -6606,7 +6569,6 @@ footer .social-icons a:hover {
     font-size: 60px;
     line-height: 60px;
   }
-  /*----- Banner ----*/
   .section-banner {
     padding: 150px 0px;
   }
@@ -6618,9 +6580,8 @@ footer .social-icons a:hover {
     line-height: 24px;
   }
 }
-/* Tablet Portrait size to standard 960 (devices and browsers) */
+
 @media only screen and (max-width: 991px) {
-  /*-----  HELPER CLASS----*/
   .no-padding-pricing-table,
   .no-padding {
     padding-left: 15px !important;
@@ -6629,7 +6590,6 @@ footer .social-icons a:hover {
   .header-top .col-logo {
     text-align: center;
   }
-  /*-----  TOP BAR ----*/
   .main-header .top-bar {
     display: none;
   }
@@ -6697,7 +6657,6 @@ footer .social-icons a:hover {
     font-size: 15px;
     padding-bottom: 22px;
   }
-  /*-----  MENU 2 Style----*/
   .main-header-2 {
     clear: both;
   }
@@ -6803,7 +6762,6 @@ footer .social-icons a:hover {
     font-size: 16px;
     line-height: 24px;
   }
-  /*-----  About Us. ----*/
   .about-us-info-block {
     padding: 52px 36px;
   }
@@ -6820,37 +6778,30 @@ footer .social-icons a:hover {
     font-size: 32px;
     line-height: 42px;
   }
-  /*----- Appointment Form ----*/
   .appointment-form-wrapper {
     margin-top: 42px;
     margin-bottom: 42px;
   }
-  /*----- PROCESS BLOCK  ----*/
   .process-step-1,
   .process-step-2 {
     margin-bottom: 24px;
   }
-  /*----- COUNTER BLOCK ----*/
   .counter-block-1,
   .counter-block-2 {
     margin-bottom: 24px;
   }
-  /*----- PRICING TABLE ----*/
   .price-table-layout-1 {
     margin-bottom: 24px;
   }
-  /*----- TEAM LAYOUT  ----*/
   .team-layout-1 {
     margin-bottom: 24px;
   }
   .gallery-carousel .owl-controls {
     display: none;
   }
-  /*----- CTA LAYOUT ----*/
   .cta-layout-02 {
     text-align: center;
   }
-  /*----- COUNTDOWN LAYOUT ----*/
   #coming_countdown {
     font-size: 24px;
   }
@@ -6875,7 +6826,6 @@ footer .social-icons a:hover {
     text-align: center;
   }
 }
-/* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
   .section-content-block .section-heading-wrapper .text-center h4{
     font-size: 25px;
@@ -6951,7 +6901,6 @@ footer .social-icons a:hover {
     font-size: 12px;
     padding: 14px 20px;
   }
-  /*-----  TOP BAR ----*/
   .main-header .top-bar {
     display: none;
   }
@@ -7058,7 +7007,6 @@ footer .social-icons a:hover {
     position: absolute;
     left: -5px;
   }
-  /*-----  MENU STYLE 02 ----*/
   .btn-header-cta {
     padding: 6px 12px;
   }
@@ -7287,7 +7235,6 @@ footer .social-icons a:hover {
   .section-banner .banner-content h3 {
     display: none;
   }
-  /*-----  About Us. ----*/
   .section-feat-about-us {
     padding: 60px 0;
   }
@@ -7310,21 +7257,17 @@ footer .social-icons a:hover {
     font-size: 32px;
     line-height: 42px;
   }
-  /*----- PROCESS BLOCK  ----*/
   .process-step-1,
   .process-step-2 {
     margin-bottom: 24px;
   }
-  /*----- COUNTER BLOCK ----*/
   .counter-block-1,
   .counter-block-2 {
     margin-bottom: 24px;
   }
-  /*----- PRICING TABLE ----*/
   .price-table-layout-1 {
     margin-bottom: 24px;
   }
-  /*----- TEAM LAYOUT  ----*/
   .team-layout-1 {
     margin-bottom: 24px;
   }
@@ -7353,7 +7296,6 @@ footer .social-icons a:hover {
   .appoinment-form {
     padding: 0 0px;
   }
-  /*----- COUNTDOWN LAYOUT  ----*/
   #coming_countdown {
     font-size: 24px;
   }
@@ -7368,7 +7310,6 @@ footer .social-icons a:hover {
   .section-home-blog .latest-news-container {
     margin-bottom: 30px;
   }
-  /*----- FAQ LAYOUT ----*/
   .faq-layout .faq-box .panel-heading [data-toggle="collapse"]::after {
     display: none;
   }
@@ -7420,9 +7361,7 @@ footer .social-icons a:hover {
     text-align: center;
   }
 }
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  /*-----  HELPER CLASS----*/
   .no-padding-pricing-table,
   .no-padding {
     padding-left: 15px !important;
@@ -7448,7 +7387,6 @@ footer .social-icons a:hover {
   .sticky-wrapper {
     background: rgba(0, 0, 0, 0.8);
   }
-  /*-----  TOP BAR ----*/
   .main-header .top-bar {
     display: none;
     text-align: center;
@@ -7533,7 +7471,6 @@ footer .social-icons a:hover {
     line-height: 32px;
     margin: 12px 0;
   }
-  /*----- HOME SLIDER ----*/
   #slider_1 .slider_item_container {
     min-height: 320px;
   }
@@ -7591,7 +7528,6 @@ footer .social-icons a:hover {
     margin-left: 0px;
     margin-top: 0px;
   }
-  /*----- HOME BANNER ----*/
   .section-banner {
     padding: 80px 0px;
   }
@@ -7612,7 +7548,6 @@ footer .social-icons a:hover {
     padding-left: 24px;
     padding-right: 24px;
   }
-  /*-----  About Us. ----*/
   .about-us-info-block {
     padding: 24px 36px;
   }
@@ -7626,17 +7561,14 @@ footer .social-icons a:hover {
     font-size: 32px;
     line-height: 42px;
   }
-  /*----- PROCESS BLOCK  ----*/
   .process-step-1,
   .process-step-2 {
     margin-bottom: 24px;
   }
-  /*----- COUNTER BLOCK ----*/
   .counter-block-1,
   .counter-block-2 {
     margin-bottom: 24px;
   }
-  /*----- CTA ----*/
   .cta-layout-01 h4,
   .cta-layout-02 h4,
   .cta-video-box h4 {
@@ -7665,7 +7597,6 @@ footer .social-icons a:hover {
   .testimonial-container.text-left .owl-dots {
     padding-left: 16px;
   }
-  /*----- APPOINTMENT FORM ----*/
   .appointment-form-wrapper {
     padding: 0;
     padding-bottom: 24px;
@@ -7693,27 +7624,22 @@ footer .social-icons a:hover {
   .appointment-form-wrapper .appoinment-form {
     padding: 0 6px;
   }
-  /*----- TEAM LAYOUT  ----*/
   .team-layout-1 {
     margin-bottom: 24px;
   }
-  /*----- NEWSLETTER LAYOUT  ----*/
   .horizontal-newsletter .news-subscription button {
     font-size: 16px;
     width: 100px;
   }
-  /*----- BLOG LAYOUT  ----*/
   .latest-news-container {
     border: 0px solid #CCCCCC;
   }
   .latest-news-container .news-content {
     padding: 12px 16px 24px;
   }
-  /*----- FAQ LAYOUT ----*/
   .faq-layout .faq-box .panel-heading [data-toggle="collapse"]::after {
     display: none;
   }
-  /*----- COUNTDOWN LAYOUT ----*/
   #coming_countdown {
     font-size: 24px;
   }
@@ -7725,7 +7651,6 @@ footer .social-icons a:hover {
     font-size: 14px;
     line-height: 42px;
   }
-  /*----- LOGO LAYOUT ----*/
   .logo-layout-1 .logo,
   .logo-layout-2 .logo {
     margin-top: 0px;
@@ -7750,9 +7675,6 @@ footer .social-icons a:hover {
   .footer-widget-area {
     padding: 42px 0 0 0;
   }
-  /* .footer-widget-area .textwidget i.fa {
-    padding-top: 10px;
-  } */
   .footer-widget-area .textwidget p {
     padding-left: 30px;
   }
@@ -7773,7 +7695,6 @@ footer .social-icons a:hover {
     text-align: center;
   }
 }
-/* Tab Portrait Size to Tab Landscape Size (devices and browsers) */
 @media only screen and (min-width: 380px) and (max-width: 480px) {
   .xs-margin {
     margin-left: 20px;
@@ -7852,6 +7773,18 @@ footer .social-icons a:hover {
 }
 .container .noticias h3{
   font-size: 25px;
+  text-align: center;
+}
+.detalhesservicos .navbar-contact{
+  margin-bottom: 22px;
+}
+.footer-widget .textwidget img{
+  width: 34px;
+}
+.footer-widget .textwidget{
+  width: 50vw;
+}
+.video-yt{
   text-align: center;
 }
 
