@@ -1081,13 +1081,13 @@ jQuery(function ($) {
 
         map = new GMaps({
             div: '#map_canvas',
-            lat: -12.043333,
-            lng: -77.028333
+            lat: -23.64849,
+            lng: -52.61367
         });
 
         map.addMarker({
-            lat: -12.043333,
-            lng: -77.028333,
+            lat: -23.64849,
+            lng: -52.61367,
             title: 'Lima',
             click: function (e) {
                 alert('You clicked in this marker');
@@ -1434,7 +1434,7 @@ if($('.appoinment-form').length) {
                         }
                     },
                     error: function (xhr, textStatus, e) {
-                        alert("Email can not be sent. Please try again.");
+                        alert("O e-mail não pode ser enviado, tente novamente!");
                         return;
                     }
                 });

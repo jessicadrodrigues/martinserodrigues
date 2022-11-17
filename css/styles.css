@@ -193,7 +193,7 @@ img {
     /* max-width: 100%; */
     object-fit: cover;
 }
-}
+
 a {
   color: #555555;
   text-decoration: none;
@@ -216,7 +216,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Times New Roman', Times, serif, serif;!important
+  font-family: 'Times New Roman', Times, serif, serif !important;
   color: #555555;
   line-height: 32px;
   margin: 0 0 16px 0;
@@ -1026,6 +1026,12 @@ a.btn-about:hover {
 #contact-form .p-errors input[type="email"],
 #contact-form .p-errors textarea {
   border-color: lightcoral;
+}
+.contact-fotos-escritorio{
+  margin-top: 2rem;
+}
+.contatct-fotos-escritorio img{
+  max-width: 100%;
 }
 .wp-caption {
   text-align: center;
