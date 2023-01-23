@@ -234,6 +234,7 @@ h1 {
 }
 h2 {
   font-size: 24px;
+  text-transform: uppercase;
 }
 h2 + p {
   margin-top: 19px;
@@ -246,6 +247,7 @@ h3 + p {
 }
 h4 {
   font-size: 18px;
+  text-transform: uppercase;
 }
 h4 + p {
   margin-top: 12px;
@@ -1596,6 +1598,11 @@ a.nav-btn-highlight:hover {
   background: #FAFAFA;
   margin-bottom: 0px;
   border-radius: 0;
+  display: flex;
+  align-items: center;
+}
+.main-header-2 .navbar-default  .imglogo img{
+  width: 120px;
 }
 .main-header-2 .navbar-default .navbar-collapse {
   padding: 0px;
@@ -1701,6 +1708,12 @@ a.nav-btn-highlight:hover {
   visibility: visible;
   opacity: 1;
   top: 52px;
+}
+.main-header-2 .navbar-default .clearfix{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 .main-header-2 header.one-page .navbar-nav > li {
   margin-left: 0;
@@ -1928,7 +1941,7 @@ a.nav-btn-highlight:hover {
 }
 #slider_1 .slider-content h2 {
   font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: 72px;
+  font-size: 55px;
   line-height: 72px;
   margin: 0px 0 0;
   color: #FFFFFF;
@@ -5972,6 +5985,13 @@ ul.pagination li:last-child {
 .contact-form-block {
   padding: 0 0 0 0px;
 }
+
+.contact-form-block .form-group input{
+  background-color: #faf8f8;
+}
+.contact-form-block .form-group textarea{
+  background-color: #faf8f8;
+}
 #contact-form input[type=text],
 #contact-form input[type=email],
 #contact-form input[type=url],
@@ -6078,11 +6098,11 @@ footer .social-icons {
   clear: both;
 }
 footer .social-icons a {
-  border: 0px solid #b9a05c;
-  background: #b9a05c;
+  /* border: 0px solid #b9a05c;
+  background: #b9a05c; */
   color: #FFFFFF;
   display: inline-block;
-  font-size: 14px;
+  font-size: 22px;
   height: 40px;
   line-height: 40px;
   margin-right: 5px;
@@ -6193,6 +6213,7 @@ footer .social-icons a:hover {
   display: inline-block;
   text-align: center;
   width: 12px;
+
   height: 12px;
   color: #e0b962;
   padding: 24px 6px 6px 0;
@@ -7792,5 +7813,7 @@ footer .social-icons a:hover {
 }
 .video-yt{
   text-align: center;
+}
+.section-heading-wrapper h4.heading-alt-style{  text-transform: uppercase !important;
 }
 
