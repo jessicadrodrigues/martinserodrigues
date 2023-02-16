@@ -1791,8 +1791,7 @@ a.nav-btn-highlight:hover {
 .detalhesservicos{
   display: flex;
   margin-bottom: 10px;
-  flex-direction: column;
-  width: 80vw;
+  flex-direction: column;  
 }
 
 .detalhesservicos img{
@@ -1801,7 +1800,7 @@ a.nav-btn-highlight:hover {
 }
 .detalhesservicos .detalhesimagem{
   display: flex;    
-  width: 80vw;
+  
   margin: 20px 0;
 }
 .detalhesservicos .detalhesimagem  .maisdetalhes{
