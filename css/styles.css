@@ -7816,3 +7816,19 @@ footer .social-icons a:hover {
 .section-heading-wrapper h4.heading-alt-style{  text-transform: uppercase !important;
 }
 
+
+.fa.fa-whatsapp::before{
+  margin-right: 0;
+}
+
+header .navbar-contact .fa.fa-whatsapp{
+  margin-right: 5px;
+}
+
+.slider-bg .fa.fa-whatsapp{
+  margin-right: 5px;
+}
+
+.footer-widget .fa.fa-instagram, .footer-widget .fa.fa-whatsapp{
+  padding: 0;
+}
