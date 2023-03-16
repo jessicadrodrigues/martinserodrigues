@@ -1791,8 +1791,7 @@ a.nav-btn-highlight:hover {
 .detalhesservicos{
   display: flex;
   margin-bottom: 10px;
-  flex-direction: column;
-  width: 80vw;
+  flex-direction: column;  
 }
 
 .detalhesservicos img{
@@ -1801,7 +1800,7 @@ a.nav-btn-highlight:hover {
 }
 .detalhesservicos .detalhesimagem{
   display: flex;    
-  width: 80vw;
+  
   margin: 20px 0;
 }
 .detalhesservicos .detalhesimagem  .maisdetalhes{
@@ -7847,3 +7846,19 @@ footer .social-icons a:hover {
   letter-spacing: 0em;
 }
 
+
+.fa.fa-whatsapp::before{
+  margin-right: 0;
+}
+
+header .navbar-contact .fa.fa-whatsapp{
+  margin-right: 5px;
+}
+
+.slider-bg .fa.fa-whatsapp{
+  margin-right: 5px;
+}
+
+.footer-widget .fa.fa-instagram, .footer-widget .fa.fa-whatsapp{
+  padding: 0;
+}
