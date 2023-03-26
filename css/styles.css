@@ -7818,18 +7818,27 @@ footer .social-icons a:hover {
 
 .section-content-block .fadeInUp .blocos{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
+
+
 .section-content-block .fadeInUp .blocos .bloco{
   border:solid 1px #b9a05c;
-  width:700px;
-  margin: 5px;
-}
-.section-content-block .fadeInUp .blocos .bloco{
-  padding:15px;
+  width:calc(100% / 4 - 15px);  
+  padding: 15px;  
   background-color:#b9a05c;
   color:#fff;
+  text-align: center;
 }
+
+@media (max-width: 1000px) {
+  .section-content-block .fadeInUp .blocos .bloco{    
+    width:calc(100% / 2 - 15px);
+  }
+}
+
 .section-content-block .fadeInUp .blocos .bloco a{
   display: flex;
   justify-content: center;
