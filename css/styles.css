@@ -1761,7 +1761,7 @@ a.nav-btn-highlight:hover {
 }
 .section-secondary-bg {
   background: #EDF0F2 !important;
-  height: 55vh;
+  height: 90%;
 }
 .section-primary-bg {
   background: #b9a05c !important;
@@ -7781,7 +7781,7 @@ footer .social-icons a:hover {
   padding-top: 0px;
 }
 .title-testemunhos{
-  padding-top: 90px;
+  padding-top: 44px;
 }
 .servicospg{
   padding-bottom: 10px;
@@ -7825,10 +7825,9 @@ footer .social-icons a:hover {
 
 
 .section-content-block .fadeInUp .blocos .bloco{
-  border:solid 1px #b9a05c;
+  background: linear-gradient( rgb(94 104 119 / 95%), rgba(0,22,56,0.95) ), url(images/pattern_1.png);
   width:calc(100% / 4 - 15px);  
   padding: 15px;  
-  background-color:#b9a05c;
   color:#fff;
   text-align: center;
 }
@@ -7844,7 +7843,7 @@ footer .social-icons a:hover {
   justify-content: center;
 }
 .section-content-block .fadeInUp .blocos .bloco span{
-  background: #5a2918;
+  background: #75798e;
   color:#fff;
   padding: 0px 12px;
   box-sizing: border-box;
@@ -7870,4 +7869,9 @@ header .navbar-contact .fa.fa-whatsapp{
 
 .footer-widget .fa.fa-instagram, .footer-widget .fa.fa-whatsapp{
   padding: 0;
+}
+
+.nossotime{
+  display: flex;
+  justify-content: center;
 }
